@@ -1,0 +1,5 @@
+/target
+*.tmp
+*.log
+tree.txt
+tree.md
