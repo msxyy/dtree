@@ -2,6 +2,11 @@
 name = "dtree"
 version = "0.1.0"
 edition = "2021"
+description = "A tree-like directory structure viewer with .gitignore support, clipboard copy, and Markdown output"
+license = "MIT"
+repository = "https://github.com/msxyy/dtree"
+keywords = ["tree", "directory", "cli", "filesystem"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
@@ -10,4 +15,4 @@ arboard = "3"
 colored = "3"
 
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.61", features = ["Win32_System_Console"] }
+windows-sys = { version = "0.61", features = ["Win32_System_Console", "Win32_Foundation"] }
